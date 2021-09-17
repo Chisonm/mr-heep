@@ -1,9 +1,9 @@
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from './Navbar'
+import Footer from './Footer'
 import styles from '../styles/Home.module.css'
 
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
@@ -14,3 +14,5 @@ export default function Layout({ children }) {
     </>
   )
 }
+
+export default Layout
