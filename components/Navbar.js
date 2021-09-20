@@ -15,7 +15,9 @@ const Navbar = () => {
                 <div className={NavStyles.d__flex}>
                     <Link href="/">Logo</Link>
                     <ul className={isOpen === false ? NavStyles.navItem__wrapper : NavStyles.navItem__wrapper + ' ' + NavStyles.active} onClick={handleClick}>
-
+                        <li className={NavStyles.navItem__links}>
+                            <Link href="/">Home</Link>
+                        </li>
                         <li className={NavStyles.navItem__links}>
                             <Link href="/about">About Us</Link>
                         </li>
