@@ -18,15 +18,7 @@ const Navbar = () => {
                         <li className={NavStyles.navItem__links}>
                             <Link href="/">Home</Link>
                         </li>
-                        <li className={NavStyles.navItem__links}>
-                            <Link href="/">About Us</Link>
-                        </li>
-                        <li className={NavStyles.navItem__links}>
-                            <Link href="/">Services</Link>
-                        </li>
-                        <li className={NavStyles.navItem__button, NavStyles.navItem__links}>
-                            <Link href="/">contact</Link>
-                        </li>
+                      
                     </ul>
 
                     <div className={isOpen === false ? NavStyles.menu : NavStyles.menu+' '+NavStyles.active } onClick={handleClick}>
