@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className={NavStyles.bg}>
             <div className={NavStyles.container}>
                 <div className={NavStyles.d__flex}>
-                    {/* <Link href="/">Logo</Link> */}
+                    <Link href="/">Logo</Link>
                     <ul className={isOpen === false ? NavStyles.navItem__wrapper : NavStyles.navItem__wrapper + ' ' + NavStyles.active} onClick={handleClick}>
 
                         <li className={NavStyles.navItem__links}>
