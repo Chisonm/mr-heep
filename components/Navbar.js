@@ -19,13 +19,13 @@ const Navbar = () => {
                             <Link href="/">Home</Link>
                         </li>
                         <li className={NavStyles.navItem__links}>
-                            <Link href="/">About Us</Link>
+                            <Link href="/about">About Us</Link>
                         </li>
                         <li className={NavStyles.navItem__links}>
-                            <Link href="/">Services</Link>
+                            <Link href="/service">Services</Link>
                         </li>
                         <li className={NavStyles.navItem__button, NavStyles.navItem__links}>
-                            <Link href="/">contact</Link>
+                            <Link href="/contact">contact</Link>
                         </li>
                     </ul>
 
