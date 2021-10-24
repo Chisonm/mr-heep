@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HeroSection from '../components/Hero/HeroSection'
 
 export default function Home() {
   return (
@@ -6,7 +7,8 @@ export default function Home() {
       <Head>
         <title>home page</title>
       </Head>
-      <h2>welcome</h2>
+
+      <HeroSection />
     </div>
   )
 }

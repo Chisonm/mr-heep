@@ -13,7 +13,9 @@ const Navbar = () => {
         <nav className={NavStyles.bg}>
             <div className={NavStyles.container}>
                 <div className={NavStyles.d__flex}>
-                    <Link href="/">Logo</Link>
+                    <div className={NavStyles.logo}>
+                    <Link href="/" >Mr Heep</Link>
+                    </div>
                     <ul className={isOpen === false ? NavStyles.navItem__wrapper : NavStyles.navItem__wrapper + ' ' + NavStyles.active} onClick={handleClick}>
                         <li className={NavStyles.navItem__links}>
                             <Link href="/">Home</Link>
@@ -24,7 +26,13 @@ const Navbar = () => {
                         <li className={NavStyles.navItem__links}>
                             <Link href="/services">Services</Link>
                         </li>
-                        <li className={NavStyles.navItem__button, NavStyles.navItem__links}>
+                        <li className={NavStyles.navItem__button, NavStyles.navItem__links, NavStyles.btn__none}>
+                            <Link href="/contact">contact</Link>
+                        </li>
+                    </ul>
+
+                    <ul>
+                    <li className={NavStyles.navItem__button, NavStyles.navItem__links,NavStyles.contact__btn}>
                             <Link href="/contact">contact</Link>
                         </li>
                     </ul>

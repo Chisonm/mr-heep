@@ -1,0 +1,102 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    gap: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.whatsapp_btn {
+    background: #03345A;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: 3rem;
+    font-weight: 700;
+    text-align: center;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.trade_btn {
+    color: #03345A;
+    border-radius: 5px;
+    border: 1px solid #03345A;
+    padding: 10px 30px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-flex;
+    vertical-align: middle;
+    transition: .4s ease;
+}
+
+.trade_btn:hover {
+    color: #fff;
+    background-color: #03345A;
+}
+
+.hero__header {
+    color: #03345A;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.hero__lead_text {
+    color: #464242;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    .hero__header {
+        color: #03345A;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 1.7rem;
+    }
+    .hero__lead_text {
+        color: #464242;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    .whatsapp_btn {
+        background: #03345A;
+        color: #fff;
+        border-radius: 5px;
+        padding: 9px 20px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .trade_btn {
+        color: #03345A;
+        border-radius: 5px;
+        border: 1px solid #03345A;
+        padding: 9px 20px;
+        text-align: center;
+        display: block;
+        font-weight: 500;
+        width: 100%;
+    }
+    .btn__none{
+        display: none;
+    }
+    .d_flex {
+        display: block;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+}

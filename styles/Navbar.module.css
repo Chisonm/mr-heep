@@ -1,13 +1,17 @@
 .bg {
-    background-color: blueviolet;
+    background-color: #03345A;
 }
 
 .container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 10px;
 }
-
+.logo a{
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+}
 .d__flex {
     display: flex;
     justify-content: space-between;
@@ -53,26 +57,72 @@
     border: 1px solid white;
     padding: 5px 10px;
 }
+.btn__none{
+    display: none;
+}
+.contact__btn{
+    /* background-color: #fff; */
+    border-radius: 20px;
+    padding: 8px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid white;
+    transition: .4s ease;
+}
+.contact__btn:hover{
+    background: #fff;
+    color: #03345A;
+}
 
 @media(max-width: 768px) {
+    .contact__btn{
+        display: none;
+    }
+    .btn__none{
+        display: block;
+        padding: .35rem 0;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+        border-left: 3px solid #03345A;
+        color: #111;
+        font-weight: bold;
+    }
     .navItem__wrapper {
         position: fixed;
-        flex-direction: row;
-        top: 1.9rem;
+        top: 2.8rem;
         left: -100%;
         width: 100%;
-        /* padding: 10px; */
-        background-color: rgb(167, 94, 235);
+        background-color: #fff;
         z-index: 1;
-        height: 20%;
         transition: all .5s ease;
+        flex-direction: column;
+        /* text-align: right; */
+        padding: 1rem 0;
     }
+
     .navItem__wrapper.active {
         left: 0;
     }
-    .navItem__links {
-        text-align: center;
+    .bg{
+        padding: 5px 0;
     }
+  
+    .navItem__links {
+        padding: .35rem 0;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+        border-left: 3px solid #03345A;
+        /* border-bottom: 1px solid gray; */
+    }
+    .navItem__links a {
+        color: #111;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+
     .menu {
         display: block;
         cursor: pointer;
@@ -82,10 +132,10 @@
     }
     .menu.active .bar:nth-child(1) {
         --webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
     }
     .menu.active .bar:nth-child(3) {
         --webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
     }
 }
