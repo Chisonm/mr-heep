@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import About from '../components/About/About'
 import HeroSection from '../components/Hero/HeroSection'
+import Trade from '../components/Trade/Trade'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
 
       <HeroSection />
       <About />
+      <Trade />
     </div>
   )
 }

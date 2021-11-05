@@ -1,0 +1,58 @@
+.wrapper {
+    background: #02192B;
+    padding: 30px 0;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+.section_title{
+    margin-bottom: 3rem;
+}
+.section_title h2 {
+    text-align: center;
+    color: #fff;
+}
+.coin_section{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.coin_section .img_wrapper{
+    margin-right: 30px;
+}
+.coin_section p{
+    color: #fff;
+}
+
+.section_title p {
+    text-align: center;
+    color: #fff;
+}
+.d_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .d_grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .coin_section .img_wrapper{
+        margin-right: 20px;
+    }
+
+    .coin_section{
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
